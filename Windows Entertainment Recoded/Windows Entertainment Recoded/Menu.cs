@@ -74,5 +74,11 @@ namespace Windows_Entertainment_Recoded
         private void BlackButton2_Click(object sender, EventArgs e) {
 
         }
+        private void OptionsButt_Click(object sender, EventArgs e) {
+            this.Hide();
+            var Options = new Options();
+            Options.Closed += (s, args) => this.Close();
+            Options.Show();
+        }
     }
 }

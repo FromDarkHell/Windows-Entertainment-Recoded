@@ -68,6 +68,7 @@
             this.BlackButton = new System.Windows.Forms.Button();
             this.BlackBox2 = new System.Windows.Forms.PictureBox();
             this.BlackButton2 = new System.Windows.Forms.Button();
+            this.OptionsButt = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.SkiFreeBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RodentsBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkiFreeBox2)).BeginInit();
@@ -485,12 +486,23 @@
             this.BlackButton2.UseVisualStyleBackColor = true;
             this.BlackButton2.Click += new System.EventHandler(this.BlackButton2_Click);
             // 
+            // OptionsButt
+            // 
+            this.OptionsButt.Location = new System.Drawing.Point(611, 1);
+            this.OptionsButt.Name = "OptionsButt";
+            this.OptionsButt.Size = new System.Drawing.Size(66, 316);
+            this.OptionsButt.TabIndex = 44;
+            this.OptionsButt.Text = "Options";
+            this.OptionsButt.UseVisualStyleBackColor = true;
+            this.OptionsButt.Click += new System.EventHandler(this.OptionsButt_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(645, 310);
+            this.ClientSize = new System.Drawing.Size(676, 310);
+            this.Controls.Add(this.OptionsButt);
             this.Controls.Add(this.BlackButton2);
             this.Controls.Add(this.BlackBox2);
             this.Controls.Add(this.BlackButton);
@@ -599,6 +611,7 @@
         private System.Windows.Forms.Button BlackButton;
         private System.Windows.Forms.PictureBox BlackBox2;
         private System.Windows.Forms.Button BlackButton2;
+        private System.Windows.Forms.Button OptionsButt;
     }
 }
 
