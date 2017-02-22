@@ -36,6 +36,8 @@
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.BlackVoice = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -115,11 +117,33 @@
             this.button2.Text = "Back";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(-8, 113);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(219, 33);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Dr. Black Jack Voice:";
+            // 
+            // BlackVoice
+            // 
+            this.BlackVoice.AutoSize = true;
+            this.BlackVoice.Location = new System.Drawing.Point(209, 125);
+            this.BlackVoice.Name = "BlackVoice";
+            this.BlackVoice.Size = new System.Drawing.Size(65, 17);
+            this.BlackVoice.TabIndex = 9;
+            this.BlackVoice.Text = "Enabled";
+            this.BlackVoice.UseVisualStyleBackColor = true;
+            // 
             // Options
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(540, 411);
+            this.Controls.Add(this.BlackVoice);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox2);
@@ -145,5 +169,7 @@
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox BlackVoice;
     }
 }
