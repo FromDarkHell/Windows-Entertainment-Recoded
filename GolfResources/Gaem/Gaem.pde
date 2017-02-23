@@ -15,7 +15,18 @@ void setup() {
   noLoop();
   runGaem();
 }
-// Work on Key Presses
+void cardCheck() {
+      String[] text = loadStrings("settings.txt");
+    String settings = join(text, ' ');
+    if(settings.contains("Flower")) {
+    PImage Back = loadImage("FloweryBack.png");
+    image(Back,0.5,319);
+    }
+    if(settings.contains("Bamboo")) {
+      PImage Back = loadImage("Bamboo.png");
+      image(Back,0.5,322);
+    }
+}
 void keyPressed() {
   if (key == 'r' || key == 'R') {
     // Restart Game
@@ -92,7 +103,7 @@ void runGaem() {
   */
   float firstcard = random(1,2);
   println(firstcard);
-      String[] text = loadStrings("settings.txt");
+    String[] text = loadStrings("settings.txt");
     String settings = join(text, ' ');
     if(settings.contains("AS")) {
       numbone();
@@ -102,23 +113,75 @@ void runGaem() {
   }
 }
 void numbone() {
+    cardCheck();
     PImage QClub = loadImage("QC.png");
     PImage TeSpad = loadImage("10S.png");
     PImage TClub = loadImage("2C.png");
     PImage TeClub = loadImage("10C.png");
     PImage QDiam = loadImage("QD.png");
+    PImage SiClub = loadImage("6C.png");
+    PImage JHear = loadImage("JH.png");
+    PImage SiHear = loadImage("6H.png");
+    PImage FiSpad = loadImage("5S.png");
+    PImage FiClub = loadImage("5C.png");
+    PImage NiSpad = loadImage("9S.png");
+    PImage ThClub = loadImage("3C.png");
+    PImage EiHear = loadImage("8H.png");
+    PImage KClub = loadImage("KC.png");
+    PImage FiHear = loadImage("5H.png");
+    PImage KDiam = loadImage("KD.png");
+    PImage SeClub = loadImage("7C.png");
+    PImage EiClub = loadImage("8C.png");
+    PImage NiHear = loadImage("9H.png");
+    PImage AceSpa = loadImage("1S.png");
+    PImage FoSpad = loadImage("4S.png");
+    PImage TSpade = loadImage("2S.png");
+    PImage SeSpad = loadImage("7S.png");
+    PImage TDiamo = loadImage("2D.png");
+    PImage JSpad = loadImage("JS.png");
+    PImage ThDiam = loadImage("3D.png");
+    PImage FiDiam = loadImage("5D.png");
+    PImage ThSpad = loadImage("3S.png");
+    PImage ThHear = loadImage("3H.png");
     image(QClub,-0.005,-4.5);
     image(TeSpad,-0.005,19.05);
     image(TClub,-0.005,38.10);
     image(TeClub,0.05,55.20);
     image(QDiam,0.05,74.25);
-    String[] text = loadStrings("settings.txt");
-    String settings = join(text, ' ');
-    if(settings.contains("Flower")) {
-    PImage Back = loadImage("FloweryBack.png");
-    image(Back,0.5,315.95);
-    }
-    else if(settings.contains("Bamboo")) {
-      PImage Back = loadImage("Bamboo.png");
-    }
+    // 2nd Row
+    image(SiClub,75,-1);
+    image(JHear,76,17.05);
+    image(SiHear,76,36.1);
+    image(FiSpad,74.5,53.2);
+    image(ThClub,76,72.25);
+    // 3rd Row
+    image(SiHear,151,1);
+    image(FiClub,151,17.05);
+    image(NiSpad,149,36.1);
+    image(EiHear,151,53.2);
+    image(KClub,151,72.25);
+    // 4th Row
+    image(FiHear,225,1);
+    image(KDiam,225,17.05);
+    image(SeClub,225,36.1);
+    image(EiClub,225,53.2);
+    image(NiHear,225,72.25);
+    // 5th Row
+    image(AceSpa,300,1);
+    image(NiHear,299.99999,17.05);
+    image(EiHear,300,36.1);
+    image(EiClub,300,53.2);
+    image(KClub,300,72.25);
+    // 6th Row
+    image(QClub,375,1);
+    image(FoSpad,375,17.05);
+    image(TSpade,375,36.1);
+    image(SeSpad,375,53.2);
+    image(TDiamo,375,72.25);
+    // Last Row
+    image(JSpad,450,1);
+    image(ThDiam,450,17.05);
+    image(FiDiam,450,35.1);
+    image(ThSpad,445,53.2);
+    image(ThHear,450,72.25);
 }
